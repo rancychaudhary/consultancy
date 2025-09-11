@@ -318,7 +318,7 @@ justify-content: center !important
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{route('blog.index')}}" class="menu-link">
                             <i class="menu-icon tf-icons ri-article-line"></i>
                             <div>Blogs</div>
                         </a>

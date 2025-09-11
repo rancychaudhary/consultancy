@@ -125,7 +125,7 @@ if (!function_exists('removeFile')) {
     function removeFile($file)
     {
         if (File::exists(public_path($file))) {
-            File::delete(public_path($file));
+            File::delete(paths: public_path($file));
         }
     }
 }

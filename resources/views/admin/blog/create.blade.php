@@ -1,22 +1,19 @@
-
 @extends('layouts.admin.master')
 @section('content')
     <div class="card mb-4">
         <div class="card-header d-flex justify-content-between align-items-center">
-            <h5 class="mb-0 text-capitalize">Create Pages</h5>
+            <h5 class="mb-0 text-capitalize">Create Blog</h5>
             <small class="text-muted float-end">
-                <a href="{{ route('pages.index') }}"
+                <a href="{{ route('blog.index') }}"
                     class="btn btn-sm btn-primary d-flex justify-content-between align-items-center gap-2">
                     back
                 </a>
             </small>
         </div>
     </div>
-
-    <form action="{{ route('pages.store') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('blog.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="row">
-
             <div class="col-md-8">
                 <div class="card mb-4">
                     <div class="card-body">
@@ -45,6 +42,14 @@
 
                             <textarea class="form-control ckeditor" id="description" name="description" placeholder="Description" rows="10"></textarea>
                         </div>
+                        {{-- <div class="mb-4">
+                                <label for="description" class="form-label">Description</label>
+                                <textarea class="form-control ckeditor" id="description" name="description" placeholder="Description" rows="10">{{ old('description') }}</textarea>
+
+                                @error('description')
+                                    <p class="text-danger">{{ $message }}</p>
+                                @enderror
+                            </div> --}}
                     </div>
 
                 </div>
@@ -71,14 +76,14 @@
                             <label for="order" class="form-label">order</label>
                             <input type="number" class="form-control" id="order" placeholder="Order" name="order">
                         </div>
-                        <div class="mb-3">
+                        {{-- <div class="mb-3">
                             <label for="image_1" class="form-label">image_1</label>
                             <input type="file" class="form-control dropify" id="image_1" name="image_1" value="image_1">
                         </div>
                         <div class="mb-3">
                             <label for="image_2" class="form-label">image_2</label>
                             <input type="file" class="form-control dropify" id="image_2" name="image_2" value="image_2">
-                        </div>
+                        </div> --}}
                         {{-- <div class="mb-3">
                             <a href="{{ route('blogs.create') }}"
                                 class="btn btn-sm btn-primary d-flex justify-content-between align-items-center gap-2">
@@ -116,8 +121,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </form>
 @endsection

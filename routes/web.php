@@ -1,10 +1,13 @@
 <?php
 
 // use App\Http\Controllers\admin\SettingController;
+// use App\Http\Controllers\admin\BlogController;
 
+use App\Http\Controllers\admin\BlogController;
 use App\Http\Controllers\admin\PagesController;
 use App\Http\Controllers\admin\SettingsController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -35,11 +38,8 @@ Route::middleware('auth')->group(function () {
 
 
 Route::middleware('auth')->prefix('admin')->group(function () {
-    // Route::resource('blogs', BlogController::class);
-    // Route::get('/admin/blogs', [BlogController::class, 'index'])->name('admin.blogs.index');
-    // Route::get('/admin.blogs/{blog}/edit', [BlogController::class, 'edit'])->name(name: 'admin.blogs.edit');
-    // Route::put('/admin.blogs/{blog}', [BlogController::class, 'update'])->name('admin.blogs.update');
 
+    Route::resource('blog', BlogController::class);
 
     Route::resource('pages', PagesController::class);
     Route::get('/admin/pages', [PagesController::class, 'index'])->name('admin.pages.index');
