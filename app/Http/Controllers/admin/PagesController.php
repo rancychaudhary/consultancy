@@ -12,9 +12,9 @@ class PagesController extends Controller
 {
     public function index()
     {
-        // $pages = Pages::all();
-        $pagess = Pages::paginate(10);
-        return view('admin.pages.index', compact('pagess'));
+        $pages = Pages::all();
+        // $pagess = Pages::paginate(10);
+        return view('admin.pages.index', compact('pages'));
     }
 
 
@@ -52,8 +52,8 @@ class PagesController extends Controller
     public function edit(string $id)
     {
         // $pages = Pages::all();
-        $pagess = Pages::findOrFail($id);
-        return view('admin.pages.edit', compact('pagess'));
+        $pages = Pages::findOrFail($id);
+        return view('admin.pages.edit', compact('pages'));
     }
 
 

@@ -57,13 +57,13 @@
                 @endphp
 
                 <!--  choice js -->
-                <select name="home_countries[]" id="home_countries" multiple>
+                {{-- <select name="home_countries[]" id="home_countries" multiple>
                     @foreach ($countries as $Country)
                         <option value="{{ $Country->id }}" @if (in_array($Country->id, $selectedcountriesIds)) selected @endif>
 
                             {{ $Country->id }}-{{ $Country->title }}</option>
                     @endforeach
-                </select>
+                </select> --}}
                 <!-- choices js -->
 
                 @error('home_countries')

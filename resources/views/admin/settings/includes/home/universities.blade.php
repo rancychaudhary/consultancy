@@ -58,14 +58,14 @@
                 @endphp
 
                 <!-- choicejs -->
-                <select name="home_universities[]" id="home_universities" multiple>
+                {{-- <select name="home_universities[]" id="home_universities" multiple>
                     @foreach ($universities as $university)
                         <option value="{{ $university->id }}" @if (in_array($university->id, $selectedUniversitiesIds)) selected @endif>
 
                             {{ $university->id }}-{{ $university->title }}</option>
                     @endforeach
-                </select>
-                <!-- choicejs --> 
+                </select> --}}
+                <!-- choicejs -->
 
                 @error('home_universities')
                     <p class="text-danger">{{ $message }}</p>

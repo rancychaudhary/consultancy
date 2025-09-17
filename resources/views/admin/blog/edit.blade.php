@@ -67,9 +67,8 @@
                             <div class="mb-3">
                                 <label for="status" class="form-label">status</label>
                                 {{-- <input type="text" class="form-control" id="status" placeholder="status" name="status"> --}}
-                                <select class="form-select" name="status" id="status"><option value="
-                                    0">Draft</option>
-                                <option value="1">Published</option></select>
+                                <select class="form-select" name="status" id="status"><option value="1">Published</option>
+                                <option value="0">Draft</option></select>
                             </div>
                             <div class="mb-3">
                                 <label for="order" class="form-label">order</label>

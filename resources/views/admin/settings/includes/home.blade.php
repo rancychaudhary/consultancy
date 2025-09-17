@@ -23,12 +23,18 @@
                     About Us
                 </button>
             </li>
-            {{-- <li class="nav-item">
-                <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#pages"
-                    aria-controls="pages" aria-selected="false">
-                    Pages
+               <li class="nav-item">
+                <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#universities"
+                    aria-controls="universities" aria-selected="false">
+                    Universities
                 </button>
-            </li> --}}
+            </li>
+               <li class="nav-item">
+                <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#countries"
+                    aria-controls="countries" aria-selected="false">
+                    Countries
+                </button>
+            </li>
 
             <li class="nav-item">
                 <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#services"
@@ -39,8 +45,20 @@
 
             <li class="nav-item">
                 <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#teams"
-                    aria-controls="countries" aria-selected="false">
+                    aria-controls="teams" aria-selected="false">
                     Teams
+                </button>
+            </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#courses"
+                    aria-controls="courses" aria-selected="false">
+                    Courses
+                </button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                    data-bs-target="#testimonials" aria-controls="testimonials" aria-selected="false">
+                    Testimonials
                 </button>
             </li>
 
@@ -48,25 +66,6 @@
                 <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#blogs"
                     aria-controls="blogs" aria-selected="false">
                     Blogs
-                </button>
-            </li>
-
-            <li class="nav-item">
-                <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
-                    data-bs-target="#testimonials" aria-controls="testimonials" aria-selected="false">
-                    Testimonials
-                </button>
-            </li>
-             <li class="nav-item">
-                <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
-                    data-bs-target="#listen" aria-controls="listen" aria-selected="false">
-                    Toplistens
-                </button>
-            </li>
-             <li class="nav-item">
-                <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
-                    data-bs-target="#whyChooseUs" aria-controls="whyChooseUs" aria-selected="false">
-                whyChooseUs
                 </button>
             </li>
 
@@ -86,10 +85,10 @@
             @include('admin.settings.includes.home.aboutus')
 
             {{-- Universities --}}
-            {{-- @include('admin.settings.includes.home.universities') --}}
+            @include('admin.settings.includes.home.universities')
 
             {{-- Countries --}}
-            {{-- @include('admin.settings.includes.home.countries') --}}
+            @include('admin.settings.includes.home.countries')
 
 
             {{-- Services --}}
@@ -99,7 +98,7 @@
             @include('admin.settings.includes.home.teams')
 
             {{-- Course --}}
-            {{-- @include('admin.settings.includes.home.courses') --}}
+            @include('admin.settings.includes.home.courses')
 
 
             {{-- Blogs --}}
@@ -109,10 +108,10 @@
             @include('admin.settings.includes.home.testimonials')
 
             {{-- Top_listen --}}
-            @include('admin.settings.includes.home.listen')
+            {{-- @include('admin.settings.includes.home.listen') --}}
 
              {{-- Whychooseus --}}
-            @include('admin.settings.includes.home.whychooseus')
+            {{-- @include('admin.settings.includes.home.whychooseus') --}}
 
 
         </div>

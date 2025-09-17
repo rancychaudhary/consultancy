@@ -1,63 +1,68 @@
 <div class="tab-pane fade" id="counter" role="tabpanel">
     {{-- About Us Section --}}
-<fieldset class="border p-3">
+    <fieldset class="border p-3">
         <legend class="float-none w-auto legend-title">Counter Section</legend>
         <div class="row">
-            <div class="mb-4 col-md-6">
-                <label for="counter_title" class="form-label">Counter Title</label>
-                <input type="text" class="form-control" id="counter_title" name="counter_title"
-                    placeholder="Counter Title" value="{{ $settings['counter_title'] }}" />
-                @error('counter_title')
-                    <p class="text-danger">{{ $message }}</p>
-                @enderror
+
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-2">
+                    <label for="home_counter_students_title" class="form-label">Students Assisted Title </label>
+                    <input type="text" class="form-control" id="home_counter_students_title"
+                        name="home_counter_students_title"
+                        value="{{ $settings['home_counter_students_title'] ?? '' }}" />
+                </div>
+
+                <div class="mb-2">
+                    <label for="home_counter_students" class="form-label">No. of Students Assisted</label>
+                    <input type="text" id="home_counter_students" name="home_counter_students" class="form-control"
+                        value="{{ $settings['home_counter_students'] ?? '' }}" />
+                </div>
             </div>
 
-            <div class="mb-4 col-md-6">
-                <label for="counter_countdown" class="form-label"> Counter Countdown</label>
-                <input type="text" class="form-control" id="counter_countdown" name="counter_countdown"
-                    placeholder="Counter Countdown" value="{{ $settings['counter_countdown'] }}" />
-                @error('counter_countdown')
-                    <p class="text-danger">{{ $message }}</p>
-                @enderror
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-2">
+                    <label for="home_counter_scholarship_title" class="form-label">Scholarship Approved Title </label>
+                    <input type="text" class="form-control" id="home_counter_scholarship_title"
+                        name="home_counter_scholarship_title"
+                        value="{{ $settings['home_counter_scholarship_title'] ?? '' }}" />
+                </div>
+
+                <div class="mb-2">
+                    <label for="home_counter_scholarship" class="form-label">No. of Scholarship Approved</label>
+                    <input type="text" id="home_counter_scholarship" name="home_counter_scholarship"
+                        class="form-control" value="{{ $settings['home_counter_scholarship'] ?? '' }}" />
+                </div>
             </div>
 
-            <div class="mb-4 col-md-6">
-                <label for="counter_subtitle" class="form-label"> Counter subtitle</label>
-                <input type="text" class="form-control" id="counter_subtitle" name="counter_subtitle"
-                    placeholder="Counter Subtitle" value="{{ $settings['counter_subtitle'] }}" />
-                @error('counter_subtitle')
-                    <p class="text-danger">{{ $message }}</p>
-                @enderror
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-2">
+                    <label for="home_counter_enrolled_title" class="form-label">Enrolled Students Title </label>
+                    <input type="text" class="form-control" id="home_counter_enrolled_title"
+                        name="home_counter_enrolled_title"
+                        value="{{ $settings['home_counter_enrolled_title'] ?? '' }}" />
+                </div>
+
+                <div class="mb-2">
+                    <label for="home_counter_enrolled" class="form-label">No. of Enrolled Students</label>
+                    <input type="text" id="home_counter_enrolled" name="home_counter_enrolled"
+                        class="form-control" value="{{ $settings['home_counter_enrolled'] ?? '' }}" />
+                </div>
             </div>
 
-            <div class="mb-4">
-                <label for="counter_description" class="form-label">Counter Description</label>
-                <textarea class="form-control" id="counter_description" name="counter_description"
-                    placeholder="Counter Description" rows="4">{{ $settings['counter_description'] }}</textarea>
+            {{-- <div class="col-md-6 col-lg-4">
+                <div class="mb-2">
+                    <label for="home_counter_affilated_title" class="form-label">Affilated College Title </label>
+                    <input type="text" class="form-control" id="home_counter_affilated_title"
+                        name="home_counter_affilated_title"
+                        value="{{ $settings['home_counter_affilated_title'] ?? '' }}" />
+                </div>
 
-                @error('counter_description')
-                    <p class="text-danger">{{ $message }}</p>
-                @enderror
-            </div>
-
-              <div class="mb-4 col-md-6">
-                <label for="counter_link" class="form-label">Counter Link</label>
-                <input type="text" class="form-control" id="counter_link" name="counter_link"
-                    placeholder="Counter Link" value="{{ $settings['counter_link'] }}" />
-                @error('counter_link')
-                    <p class="text-danger">{{ $message }}</p>
-                @enderror
-            </div>
-
-            <div class="mb-4 col-md-6">
-                <label for="counter_button" class="form-label">Counter Button Text</label>
-                <input type="text" class="form-control" id="counter_button" name="counter_button"
-                    placeholder="Counter Button Text" value="{{ $settings['counter_button'] }}" />
-                @error('counter_button')
-                    <p class="text-danger">{{ $message }}</p>
-                @enderror
-            </div>
-
+                <div class="mb-2">
+                    <label for="home_counter_affilated" class="form-label">No. of Affilated College</label>
+                    <input type="text" id="home_counter_affilated" name="home_counter_affilated"
+                        class="form-control" value="{{ $settings['home_counter_affilated'] ?? '' }}" />
+                </div>
+            </div> --}}
         </div>
     </fieldset>
 </div>

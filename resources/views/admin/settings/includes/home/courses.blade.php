@@ -57,13 +57,13 @@
                 @endphp
 
                 <!--  choice js -->
-                <select name="home_courses[]" id="home_courses" multiple>
+                {{-- <select name="home_courses[]" id="home_courses" multiple>
                     @foreach ($courses as $Course)
                         <option value="{{ $Course->id }}" @if (in_array($Course->id, $selectedcoursesIds)) selected @endif>
 
                             {{ $Course->id }}-{{ $Course->title }}</option>
                     @endforeach
-                </select>
+                </select> --}}
                 <!-- choices js -->
 
                 @error('home_courses')

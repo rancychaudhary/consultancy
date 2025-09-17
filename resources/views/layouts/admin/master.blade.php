@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="{{ asset('assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
 
     <link rel="stylesheet" href="{{ asset('assets/admin/vendor/libs/apex-charts/apex-charts.css') }}" />
-    <script src="{{ asset('assets/admin/js/sweetalert-new.js') }}"></script>
+    {{-- <script src="{{ asset('assets/admin/js/sweetalert-new.js') }}"></script> --}}
 
     {{-- Dropzone --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.0/min/dropzone.min.css">
@@ -278,8 +278,8 @@ justify-content: center !important
                             </li>
                         </ul>
                     </li>
-                    <li class="menu-item open" >
-                        <a href="" class="menu-link">
+                    <li class="menu-item open">
+                        <a href="{{route('enquiry.index')}}" class="menu-link">
                             <i class="menu-icon tf-icons ri-question-mark"></i>
                             <div class="text-truncate" data-i18n="Layouts">Students Enquiry</div>
                         </a>
@@ -305,20 +305,20 @@ justify-content: center !important
                     </li> --}}
 
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{route('country.index')}}" class="menu-link">
                             <i class="menu-icon tf-icons ri-globe-line"></i>
                             <div>Countries</div>
                         </a>
                     </li>
 
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{route('course.index')}}" class="menu-link">
                             <i class="menu-icon tf-icons ri-book-2-line"></i>
                             <div>Courses</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="{{route('blog.index')}}" class="menu-link">
+                        <a href="{{ route('blog.index') }}" class="menu-link">
                             <i class="menu-icon tf-icons ri-article-line"></i>
                             <div>Blogs</div>
                         </a>
@@ -331,19 +331,19 @@ justify-content: center !important
                     </li>
 
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('pages.index') }}" class="menu-link">
                             <i class="menu-icon tf-icons ri-file-copy-2-line"></i>
                             <div>Pages</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('team.index') }}" class="menu-link">
                             <i class="menu-icon tf-icons ri-group-line"></i>
                             <div>Teams</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('service.index') }}" class="menu-link">
                             <i class="menu-icon tf-icons  bx bx-server"></i>
                             <div>Services</div>
                         </a>
@@ -362,13 +362,13 @@ justify-content: center !important
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('testimonial.index') }}" class="menu-link">
                             <i class="menu-icon tf-icons ri-message-2-line"></i>
                             <div>Testimonials</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{route('whychooseus.index')}}" class="menu-link">
                             <i class="menu-icon tf-icons ri-question-mark"></i>
                             <div>Why Choose Us</div>
                         </a>
@@ -383,7 +383,7 @@ justify-content: center !important
 
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="" class="menu-link">
+                                <a href="{{ route('admin.setting.index') }}" class="menu-link">
                                     <div data-i18n="Without menu">Global settings</div>
                                 </a>
                             </li>
@@ -410,7 +410,7 @@ justify-content: center !important
             <div class="layout-page">
                 <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
                     id="layout-navbar">
-                    {{-- @include('admin.includes.notification') --}}
+                    @include('admin.includes.notification')
 
                     <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
                         <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
@@ -810,7 +810,6 @@ justify-content: center !important
                 });
             }
         </script>
-
 
 
         <script>

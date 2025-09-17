@@ -38,7 +38,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-6 mb-4">
                         <div class="card">
-                            <a href="" class="text-decoration-none link-dark">
+                            <a href="{{route('course.index')}}" class="text-decoration-none link-dark">
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
                                         <div class="avatar flex-shrink-0">
@@ -55,7 +55,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-6 mb-4">
                         <div class="card">
-                            <a href="" class="text-decoration-none link-dark">
+                            <a href="{{route('enquiry.index')}}" class="text-decoration-none link-dark">
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
                                         <div class="avatar flex-shrink-0">
@@ -72,7 +72,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-6 mb-4">
                         <div class="card">
-                            <a href="" class="text-decoration-none link-dark">
+                            <a href="{{route('blog.index')}}" class="text-decoration-none link-dark">
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
                                         <div class="avatar flex-shrink-0">
@@ -89,7 +89,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-6 mb-4">
                         <div class="card">
-                            <a href="" class="text-decoration-none link-dark">
+                            <a href="{{route('pages.index')}}" class="text-decoration-none link-dark">
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
                                         <div class="avatar flex-shrink-0">
@@ -123,7 +123,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-6 mb-4">
                         <div class="card">
-                            <a href="" class="text-decoration-none link-dark">
+                            <a href="{{route('service.index')}}" class="text-decoration-none link-dark">
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
                                         <div class="avatar flex-shrink-0">
@@ -157,7 +157,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-6 mb-4">
                         <div class="card">
-                            <a href="" class="text-decoration-none link-dark">
+                            <a href="{{route('team.index')}}" class="text-decoration-none link-dark">
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
                                         <div class="avatar flex-shrink-0">
@@ -174,7 +174,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-6 mb-4">
                         <div class="card">
-                            <a href="" class="text-decoration-none link-dark">
+                            <a href="{{route('testimonial.index')}}" class="text-decoration-none link-dark">
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
                                         <div class="avatar flex-shrink-0">
