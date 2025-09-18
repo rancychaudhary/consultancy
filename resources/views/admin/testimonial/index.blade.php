@@ -53,14 +53,14 @@
                                     {{-- <a href="" class="btn btn-primary btn-sm">
                                         <i class="ri-eye-fill"></i></a> --}}
                                     <a href="{{ route('testimonial.edit', $testimonial->id) }}" class="btn btn-primary btn-sm">
-                                        <i class="ri-edit-2-fill"></i></a>
+                                        <i class="tf-icons bx bx-edit text-white"></i></a>
 
 
                                     <form action="{{ route('testimonial.destroy', $testimonial->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger btn-sm delete_popup"><i
-                                            class="ri-delete-bin-5-line"></i></button>
+                                            class="tf-icons bx bx-trash text-white"></i></button>
                                     </form>
                                     {{-- <button type="button" class="btn btn-sm btn-danger"><i
                                             class="ri-delete-bin-5-line"></i></button> --}}
@@ -86,5 +86,5 @@
             });
         </script>
     @endpush
-   
+
 @endsection

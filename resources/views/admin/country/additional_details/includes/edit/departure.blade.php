@@ -5,7 +5,7 @@
             <label for="departure_subtitle" class="form-label">Departure Subtitle</label>
             <input type="text" class="form-control" id="departure_subtitle" name="departure_subtitle"
                 placeholder="Departure Subtitle"
-                value="{{ old('departure_subtitle', ${$name}->departure_subtitle) }}" />
+                value="{{ old('departure_subtitle', $country->departure_subtitle) }}" />
             @error('departure_subtitle')
                 <p class="text-danger">{{ $message }}</p>
             @enderror
@@ -15,7 +15,7 @@
         <div class="mb-4">
             <label for="departure_description" class="form-label">Departure Description</label>
             <textarea class="form-control ckeditor6" id="departure_description" name="departure_description"
-                placeholder="Departure Description" rows="10">{{ old('departure_description', ${$name}->departure_description) }}</textarea>
+                placeholder="Departure Description" rows="10">{{ old('departure_description', $country->departure_description) }}</textarea>
 
             @error('departure_description')
                 <p class="text-danger">{{ $message }}</p>
@@ -25,8 +25,8 @@
         <div class="mb-4">
             <label for="departure_image" class="form-label">Departure Image</label>
             <input class="form-control dropify" type="file" id="departure_image" name="departure_image"
-                value="{{ old('departure_image', ${$name}->departure_image) }}"
-                data-default-file="{{ asset(${$name}->departure_image) }}" />
+                value="{{ old('departure_image', $country->departure_image) }}"
+                data-default-file="{{ asset($country->departure_image) }}" />
 
             @error('departure_image')
                 <p class="text-danger">{{ $message }}</p>

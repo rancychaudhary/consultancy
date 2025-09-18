@@ -56,14 +56,14 @@
 
                                     <a href="{{ route('whychooseus.edit', $whychooseus->id) }}"
                                         class="btn btn-primary btn-sm">
-                                        <i class="ri-edit-2-fill"></i></a>
+                                        <i class="tf-icons bx bx-edit text-white"></i></a>
                                     <form action="{{ route('whychooseus.destroy', $whychooseus->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger btn-sm delete_popup"><i
-                                                class="ri-delete-bin-5-line"></i></button>
+                                                class="tf-icons bx bx-trash text-white"></i></button>
                                     </form>
-                                 
+
                                 </td>
                             </tr>
                         @endforeach

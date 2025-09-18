@@ -7,9 +7,11 @@ use App\Http\Controllers\admin\BlogController;
 use App\Http\Controllers\admin\CountryController;
 use App\Http\Controllers\admin\CourseController;
 use App\Http\Controllers\admin\EnquiryController;
+use App\Http\Controllers\admin\FaqController;
 use App\Http\Controllers\admin\PagesController;
 use App\Http\Controllers\admin\ServiceController;
 use App\Http\Controllers\admin\SettingsController;
+use App\Http\Controllers\admin\SuccessController;
 use App\Http\Controllers\admin\TeamController;
 use App\Http\Controllers\admin\TestimonialController;
 use App\Http\Controllers\admin\WhyChooseUsController;
@@ -77,6 +79,10 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::resource('whychooseus', WhyChooseUsController::class);
 
     Route::resource('country', CountryController::class);
+
+    Route::resource('success', SuccessController::class);
+
+    Route::resource('faq', FaqController::class);
 });
 
 require __DIR__ . '/auth.php';

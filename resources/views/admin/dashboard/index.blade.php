@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-6 mb-4">
                         <div class="card">
-                            <a href="" class="text-decoration-none link-dark">
+                            <a href="{{route('country.index')}}" class="text-decoration-none link-dark">
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
                                         <div class="avatar flex-shrink-0">

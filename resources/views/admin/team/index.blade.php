@@ -52,14 +52,14 @@
                                     {{-- <button type="button" class="btn btn-sm btn-primary"><i
                                             class="ri-edit-2-fill"></i></button> --}}
                                     <a href="{{route('team.show', $team->id)}}" class="btn btn-primary btn-sm">
-                                        <i class="ri-eye-fill"></i></a>
+                                        <i class="tf-icons bx bx-show-alt text-white"></i></a>
                                     <a href="{{ route('team.edit', $team->id) }}" class="btn btn-primary btn-sm">
-                                        <i class="ri-edit-2-fill"></i></a>
+                                        <i class="tf-icons bx bx-edit text-white"></i></a>
                                     <form action="{{ route('team.destroy', $team->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger btn-sm delete_popup"><i
-                                            class="ri-delete-bin-5-line"></i></button>
+                                            class="tf-icons bx bx-trash text-white"></i></button>
                                     </form>
                                     {{-- <button type="button" class="btn btn-sm btn-danger"><i
                                             class="ri-delete-bin-5-line"></i></button> --}}

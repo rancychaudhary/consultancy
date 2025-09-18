@@ -2,7 +2,7 @@
 
 @php
     $title = 'Countries';
-    $name = 'country';
+    // $name = 'country';
 @endphp
 
 @section('content')

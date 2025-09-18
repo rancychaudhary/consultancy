@@ -4,7 +4,7 @@
             <label for="documentation_subtitle" class="form-label">Documentation Subtitle</label>
             <input type="text" class="form-control" id="documentation_subtitle" name="documentation_subtitle"
                 placeholder="Documentation Subtitle"
-                value="{{ old('documentation_subtitle', ${$name}->documentation_subtitle) }}" />
+                value="{{ old('documentation_subtitle', $countrty->documentation_subtitle) }}" />
             @error('documentation_subtitle')
                 <p class="text-danger">{{ $message }}</p>
             @enderror
@@ -14,7 +14,7 @@
         <div class="mb-4">
             <label for="documentation_description" class="form-label">Documentation Description</label>
             <textarea class="form-control ckeditor4" id="documentation_description" name="documentation_description"
-                placeholder="Documentation Description" rows="10">{{ old('documentation_description', ${$name}->documentation_description) }}</textarea>
+                placeholder="Documentation Description" rows="10">{{ old('documentation_description', $countrty->documentation_description) }}</textarea>
 
             @error('documentation_description')
                 <p class="text-danger">{{ $message }}</p>
@@ -24,8 +24,8 @@
         <div class="mb-4">
             <label for="documentation_image" class="form-label">Documentation Image</label>
             <input class="form-control dropify" type="file" id="documentation_image" name="documentation_image"
-                value="{{ old('documentation_image', ${$name}->documentation_image) }}"
-                data-default-file="{{ asset(${$name}->documentation_image) }}" />
+                value="{{ old('documentation_image', $countrty->documentation_image) }}"
+                data-default-file="{{ asset($countrty->documentation_image) }}" />
 
             @error('documentation_image')
                 <p class="text-danger">{{ $message }}</p>

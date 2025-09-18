@@ -324,7 +324,7 @@ justify-content: center !important
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{route('success.index')}}" class="menu-link">
                             <i class="menu-icon tf-icons ri-star-line"></i>
                             <div>Success Stories</div>
                         </a>
@@ -356,7 +356,7 @@ justify-content: center !important
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{route('faq.index')}}" class="menu-link">
                             <i class="menu-icon tf-icons ri-question-line"></i>
                             <div>Faqs</div>
                         </a>
