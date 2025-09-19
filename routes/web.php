@@ -11,6 +11,7 @@ use App\Http\Controllers\admin\FaqController;
 use App\Http\Controllers\admin\PagesController;
 use App\Http\Controllers\admin\ServiceController;
 use App\Http\Controllers\admin\SettingsController;
+use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\admin\SuccessController;
 use App\Http\Controllers\admin\TeamController;
 use App\Http\Controllers\admin\TestimonialController;
@@ -83,6 +84,9 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::resource('success', SuccessController::class);
 
     Route::resource('faq', FaqController::class);
+
+    Route::resource('slider', SliderController::class);
+    
 });
 
 require __DIR__ . '/auth.php';

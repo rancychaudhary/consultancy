@@ -350,7 +350,7 @@ justify-content: center !important
                     </li>
 
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{route('slider.index')}}" class="menu-link">
                             <i class="menu-icon tf-icons ri-equalizer-fill"></i>
                             <div>Sliders</div>
                         </a>
