@@ -1,18 +1,19 @@
 @extends('layouts.admin.master')
 @section('content')
-    <div class="card mb-4">
+   <div class="card mb-4">
         <div class="card-header d-flex justify-content-between align-items-center">
-            <h5 class="mb-0 text-capitalize">Teams</h5>
+            <h5 class="mb-0 text-capitalize">Teams Detail</h5>
             <small class="text-muted float-end">
-                <a href="{{ route('team.create') }}"
+                <a href="{{ route('team.index') }}"
                     class="btn btn-sm btn-primary d-flex justify-content-between align-items-center gap-2">
-                   + Create
+                    back
                 </a>
             </small>
         </div>
     </div>
     <div class="card">
         {{-- <h5 class="card-header">Striped rows</h5> --}}
+         @if (!$team->isEmpty())
         <div class="card_body">
             <div class="table-responsive text-nowrap">
                 <table class="table table-striped">
@@ -73,6 +74,11 @@
                 {{-- {{ $teams->links() }} --}}
             </div>
         </div>
+         @else
+            <div class="card-body">
+                <h6>No Data Found!</h6>
+            </div>
+        @endif
     </div>
     @push('js')
         <script>

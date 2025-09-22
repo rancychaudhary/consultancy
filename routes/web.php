@@ -9,9 +9,11 @@ use App\Http\Controllers\admin\CourseController;
 use App\Http\Controllers\admin\EnquiryController;
 use App\Http\Controllers\admin\FaqController;
 use App\Http\Controllers\admin\PagesController;
+use App\Http\Controllers\admin\PopupController;
 use App\Http\Controllers\admin\ServiceController;
 use App\Http\Controllers\admin\SettingsController;
 use App\Http\Controllers\admin\SliderController;
+use App\Http\Controllers\admin\SocialmediaController;
 use App\Http\Controllers\admin\SuccessController;
 use App\Http\Controllers\admin\TeamController;
 use App\Http\Controllers\admin\TestimonialController;
@@ -86,7 +88,11 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::resource('faq', FaqController::class);
 
     Route::resource('slider', SliderController::class);
-    
+
+    Route::resource('popup', PopupController::class);
+
+
+    Route::resource('socialmedia', SocialmediaController::class);
 });
 
 require __DIR__ . '/auth.php';

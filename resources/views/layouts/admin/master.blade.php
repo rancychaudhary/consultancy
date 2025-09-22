@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="{{ asset('assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
 
     <link rel="stylesheet" href="{{ asset('assets/admin/vendor/libs/apex-charts/apex-charts.css') }}" />
-    {{-- <script src="{{ asset('assets/admin/js/sweetalert-new.js') }}"></script> --}}
+    
 
     {{-- Dropzone --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.0/min/dropzone.min.css">
@@ -48,6 +48,8 @@
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> --}}
     {{-- //fancybox --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
+                    <script src="{{ asset('assets/admin/js/sweetalert-new.js') }}"></script>
+
     <style>
         /* Target the Dropify container / */
         .dropify-wrapper .dropify-message p {
@@ -388,12 +390,12 @@ justify-content: center !important
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="" class="menu-link">
+                                <a href="{{route('popup.index')}}" class="menu-link">
                                     <div data-i18n="Without navbar">PopUps</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="" class="menu-link">
+                                <a href="{{route('socialmedia.index')}}" class="menu-link">
                                     <div data-i18n="Container">Social Medias</div>
                                 </a>
                             </li>
@@ -419,15 +421,6 @@ justify-content: center !important
                     </div>
 
                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-                        <!-- Search -->
-                        {{-- <div class="navbar-nav align-items-center">
-                            <div class="nav-item d-flex align-items-center">
-                                <i class="bx bx-search fs-4 lh-0"></i>
-                                <input type="text" class="form-control border-0 shadow-none"
-                                    placeholder="Search..." aria-label="Search..." />
-                            </div>
-                        </div> --}}
-                        <!-- /Search -->
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- Place this tag where you want the button to render. -->
@@ -477,7 +470,7 @@ justify-content: center !important
 
 
                                     <li>
-                                        <a class="dropdown-item" href="">
+                                        <a class="dropdown-item" href="{{route('admin.setting.index')}}">
                                             <i class="bx bx-cog me-2"></i>
                                             <span class="align-middle">Settings</span>
                                         </a>
@@ -485,14 +478,14 @@ justify-content: center !important
 
 
                                     <li>
-                                        <a class="dropdown-item" href=""
+                                        <a class="dropdown-item" href="{{route('logout')}}"
                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                             <i class="bx bx-power-off me-2"></i>
                                             <span class="align-middle">Log Out</span>
                                         </a>
                                     </li>
 
-                                    <form class="d-none" id="logout-form" action="" method="POST">
+                                    <form class="d-none" id="logout-form" action="{{route('logout')}}" method="POST">
                                         @csrf
                                     </form>
                                 </ul>
@@ -565,7 +558,7 @@ justify-content: center !important
         <script src="{{ asset('asset/admin/js/dashboards-analytics.js') }}"></script> --}}
 
 
-        <script src="{{ asset('assets/admin/js/sweetalert-new.js') }}"></script>
+        {{-- <script src="{{ asset('assets/admin/js/sweetalert-new.js') }}"></script> --}}
 
         {{-- dropify js --}}
         <script src="{{ asset('assets/admin/vendor/libs/dropify/js/dropify.min.js') }}"></script>
@@ -812,7 +805,7 @@ justify-content: center !important
         </script>
 
 
-        <script>
+        {{-- <script>
             $('.delete_popup').click(function(e) {
                 e.preventDefault();
 
@@ -831,11 +824,15 @@ justify-content: center !important
                 });
 
             });
-        </script>
+        </script> --}}
         @stack('js')
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
+    {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
+
+
+
 </body>
 
 </html>

@@ -2,8 +2,19 @@
 @section('content')
 
 <div class="container mt-5">
-    <h2 class="mb-3">Teams Details</h2>
-    <a href="{{route('admin.team.index')}}" class="btn btn-secondary mb-3">Back to List</a>
+    {{-- <h2 class="mb-3">Teams Details</h2>
+    <a href="{{route('admin.team.index')}}" class="btn btn-secondary mb-3">Back to List</a> --}}
+      <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0 text-capitalize">Team Detail</h5>
+            <small class="text-muted float-end">
+                <a href="{{ route('team.index') }}"
+                    class="btn btn-sm btn-primary d-flex justify-content-between align-items-center gap-2">
+                    back
+                </a>
+            </small>
+        </div>
+    </div>
 
     <div class="card">
         <div class="card-body">
@@ -30,7 +41,7 @@
                     @endif
                 </div>
             @endif
-            
+
             <p><strong>Seo Title</strong> {{ $team->seo_title}}</p>
             <p><strong>Meta Keywords</strong>{{ $team->meta_keywords}}</p>
             <p><strong>Meta Description:</strong> {{ $team->meta_description}}</p>

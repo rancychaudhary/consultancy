@@ -13,6 +13,7 @@
     </div>
     <div class="card">
         {{-- <h5 class="card-header">Striped rows</h5> --}}
+         @if (!$whychooseus->isEmpty())
         <div class="card_body">
             <div class="table-responsive text-nowrap">
                 <table class="table table-striped">
@@ -72,6 +73,11 @@
                 {{-- {{ $whychooseus->links() }} --}}
             </div>
         </div>
+         @else
+            <div class="card-body">
+                <h6>No Data Found!</h6>
+            </div>
+        @endif
     </div>
     @push('js')
         <script>
