@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->mediumText('short_description')->nullable();
             $table->longText('description')->nullable();
+            $table->string('icon')->nullable();
 
             $table->string('image')->nullable();
             $table->string('image_1')->nullable();

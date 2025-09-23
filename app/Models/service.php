@@ -14,6 +14,7 @@ class service extends Model
         'slug',
         'short_description',
         'description',
+        'icon',
         'image',
         'image_1',
         "image_2",

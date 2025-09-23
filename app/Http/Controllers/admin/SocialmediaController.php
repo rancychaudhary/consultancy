@@ -39,16 +39,7 @@ class SocialmediaController extends Controller
 
         $request->validate([]);
 
-        // $input['slug'] = $input['slug'] ? $input['slug'] : make_slug($input['title']);
 
-        // $imagelist = ['image', 'image_1', 'image_2'];
-        // // dd($input);
-
-        // foreach ($imagelist as $image) {
-        //     if ($request->hasFile($image)) {
-        //         $input[$image] = fileUpload($request, $image, 'social');
-        //     }
-        // }
 
 
         Socialmedia::create($input);
@@ -105,40 +96,6 @@ class SocialmediaController extends Controller
         ];
 
 
-        // $imagelist = ['image', 'image_1', 'image_2'];
-
-        // foreach ($imagelist as $image) {
-        //     if ($request->$image != '') {
-        //         $rules[$image] = 'image';
-        //     }
-        // }
-
-        // $validator = Validator::make($input, $rules);
-
-        // if ($validator->fails()) {
-        //     return redirect()->route('social.edit', $socialmedia)->withInput()->withErrors($validator);
-        // }
-
-        // foreach ($imagelist as $image) {
-        //     if ($request->$image != '') {
-        //         if ($socialmedia->$image != '') {
-        //             $file = $socialmedia->$image;
-        //             removeFile($file);
-        //         }
-        //         $imageName = fileUpload($request, $image, 'social');
-        //         $input[$image] = $imageName;
-        //     }
-
-        //     $deleteimage = 'delete' . $image;
-        //     if (isset($input[$deleteimage]) && $input[$deleteimage] == 'on') {
-
-        //         if ($socialmedia->$image != '') {
-        //             $file = $socialmedia->$image;
-        //             removeFile($file);
-        //         }
-        //         $input[$image] = null;
-        //     }
-        // }
         $socialmedia->update($input);
 
 

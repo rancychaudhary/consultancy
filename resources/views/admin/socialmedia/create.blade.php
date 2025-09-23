@@ -4,14 +4,14 @@
         <div class="card-header d-flex justify-content-between align-items-center">
             <h5 class="mb-0 text-capitalize">Create Socialmedia</h5>
             <small class="text-muted float-end">
-                <a href="{{ route('social.index') }}"
+                <a href="{{ route('socialmedia.index') }}"
                     class="btn btn-sm btn-primary d-flex justify-content-between align-items-center gap-2">
                     back
                 </a>
             </small>
         </div>
     </div>
-    <form action="{{ route('social.store') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('socialmedia.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="row">
             <div class="col-md-8">
@@ -38,7 +38,7 @@
                                 value="{{ old('link') }}">
                         </div>
 
-                      
+
                     </div>
 
                 </div>

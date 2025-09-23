@@ -13,12 +13,10 @@ return new class extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
-
-
             $table->string('key')->nullable();
             $table->longtext('value')->nullable();
 
-            
+
             $table->timestamps();
         });
     }

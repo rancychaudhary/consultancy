@@ -70,6 +70,11 @@
                             <label for="order" class="form-label">order</label>
                             <input type="number" class="form-control" id="order" placeholder="Order" name="order">
                         </div>
+                        <div class="my-4">
+                            <label for="icon" class="form-label">Icons</label>
+                            <input type="text" class="form-control" id="icon" name="icon"
+                                placeholder="Enter new icon">
+                        </div>
                         {{-- <div class="mb-3">
                             <label for="image_1" class="form-label">image_1</label>
                             <input type="file" class="form-control dropify" id="image_1" name="image_1" value="image_1">

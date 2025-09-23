@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="{{ asset('assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
 
     <link rel="stylesheet" href="{{ asset('assets/admin/vendor/libs/apex-charts/apex-charts.css') }}" />
-    
+
 
     {{-- Dropzone --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.0/min/dropzone.min.css">
@@ -246,7 +246,7 @@ justify-content: center !important
                         </span> --}}
 
                         <span class="app-brand-text demo menu-text fw-bolder ms-2"><img class="dashboard_logo"
-                                src=" " alt="">Consult</span>
+                                src="" alt="">Consult</span>
                     </a>
 
                     <a href="javascript:void(0);"
@@ -431,7 +431,7 @@ justify-content: center !important
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
                                     data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
-                                        <img src="" alt class="w-px-40 h-auto rounded-circle" />
+                                        <img src="{{ asset('assets/admin/img/avatars/5.png') }}" alt class="w-px-40 h-auto rounded-circle" />
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
@@ -440,7 +440,7 @@ justify-content: center !important
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="" alt
+                                                        <img src="{{ asset('assets/admin/img/avatars/5.png') }}" alt
                                                             class="w-px-40 h-auto rounded-circle" />
                                                     </div>
                                                 </div>
