@@ -33,7 +33,7 @@
                                             class="fro-dropzone-image-img rounded">
                                     </div>
                                 </a>
-                                <form action="{{ route( '.destroy', $success->id) }}" method="post"
+                                <form action="{{ route( 'success.destroy', $success->id) }}" method="post"
                                     class="d-inline position-absolute top-0 end-0">
                                     @csrf
                                     @method('DELETE')
