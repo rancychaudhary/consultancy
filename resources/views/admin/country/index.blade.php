@@ -40,7 +40,7 @@
                                     <td>
                                         <a href="{{ asset($country->image) }}" class="fro-dropzone-image-a fancybox"
                                             data-fancybox="images" target="_blank">
-                                            <img src="{{ asset($country->image) }}" class="table_image"
+                                            <img src="{{ asset($country->image) }}" class="img-table"
                                                 alt="{{ $country->title }}">
                                         </a>
                                     </td>
@@ -60,10 +60,10 @@
                                             <i class="tf-icons bx bx-edit text-white"></i>
                                         </a>
 
-                                        {{-- <a href="{{ route('university.index', $country->id) }}" type="button"
+                                        <a href="{{ route('university.index', $country->id) }}" type="button"
                                             class="btn btn-sm btn-icon btn-info">
                                             <i class="tf-icons bx bxs-graduation text-white"></i>
-                                        </a> --}}
+                                        </a>
 
                                         <form action="{{ route('country.destroy', $country->id) }}" method="post"
                                             class="d-inline">

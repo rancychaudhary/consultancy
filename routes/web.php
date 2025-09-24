@@ -17,6 +17,7 @@ use App\Http\Controllers\admin\SocialmediaController;
 use App\Http\Controllers\admin\SuccessController;
 use App\Http\Controllers\admin\TeamController;
 use App\Http\Controllers\admin\TestimonialController;
+use App\Http\Controllers\admin\UniversityController;
 use App\Http\Controllers\admin\WhyChooseUsController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Blog;
@@ -93,6 +94,13 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 
 
     Route::resource('socialmedia', SocialmediaController::class);
+
+    Route::get('country/{country_id}/university', [UniversityController::class, 'index'])->name('university.index');
+    Route::get('country/{country_id}/university/create', [UniversityController::class, 'create'])->name('university.create');
+    Route::get('country/{country_id}/university/{university}/edit', [UniversityController::class, 'edit'])->name('university.edit');
+    Route::post('country/{country_id}/university', [UniversityController::class, 'store'])->name('university.store');
+    Route::put('country/{country_id}/university/{university}', [UniversityController::class, 'update'])->name('university.update');
+    Route::delete('country/{country_id}/university/{university}', [UniversityController::class, 'destroy'])->name('university.destroy');
 });
 
 require __DIR__ . '/auth.php';

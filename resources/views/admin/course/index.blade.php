@@ -65,20 +65,7 @@
                                         <button type="submit" class="btn btn-danger btn-sm delete_popup"><i
                                                 class="tf-icons bx bx-trash text-white"></i></button>
                                     </form>
-                                    {{-- <form action="{{ route($name . '.destroy', ${$name}->id) }}" method="post"
-                                            class="d-inline">
-                                            @csrf
-                                            @method('delete_course')
-                                            <button type="submit" class="btn btn-sm btn-icon btn-danger delete_{{$name}}">
-                                                <i class="tf-icons bx bx-trash text-white"></i>
-                                            </button>
-                                        </form> --}}
-
-
-                                    {{-- <button type="button" class="btn btn-sm btn-danger"><i
-                                            class="ri-delete-bin-5-line"></i></button> --}}
-
-                                    {{-- {{$course->actions}} --}}
+                                 
                                 </td>
                             </tr>
                         @endforeach

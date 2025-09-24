@@ -49,6 +49,8 @@
     {{-- //fancybox --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
                     <script src="{{ asset('assets/admin/js/sweetalert-new.js') }}"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <style>
         /* Target the Dropify container / */
@@ -246,7 +248,7 @@ justify-content: center !important
                         </span> --}}
 
                         <span class="app-brand-text demo menu-text fw-bolder ms-2"><img class="dashboard_logo"
-                                src="" alt="">Consult</span>
+                                src="{{ $settings['site_main_logo'] ?? '' }}" alt="">Consult</span>
                     </a>
 
                     <a href="javascript:void(0);"
@@ -373,6 +375,12 @@ justify-content: center !important
                         <a href="{{route('whychooseus.index')}}" class="menu-link">
                             <i class="menu-icon tf-icons ri-question-mark"></i>
                             <div>Why Choose Us</div>
+                        </a>
+                    </li>
+                     <li class="menu-item">
+                        <a href="{{ route('university.index', ['country_id' => 1]) }}" class="menu-link">
+                            <i class="menu-icon tf-icons ri-community-line"></i>
+                            <div>University</div>
                         </a>
                     </li>
 
@@ -805,7 +813,8 @@ justify-content: center !important
         </script>
 
 
-        {{-- <script>
+        <script>
+
             $('.delete_popup').click(function(e) {
                 e.preventDefault();
 
@@ -824,7 +833,7 @@ justify-content: center !important
                 });
 
             });
-        </script> --}}
+        </script>
         @stack('js')
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
