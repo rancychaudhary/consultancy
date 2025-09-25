@@ -125,7 +125,7 @@
                         </div>
                     </div>
 
-                    @include('admin.global.form.seo.create')
+                    {{-- @include('admin.global.form.seo.create') --}}
 
                 </div>
             </div>

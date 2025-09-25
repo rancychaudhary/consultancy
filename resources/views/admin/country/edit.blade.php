@@ -134,7 +134,7 @@
                         </div>
                     </div>
 
-                    @include('admin.global.form.seo.edit')
+                    {{-- @include('admin.global.form.seo.edit') --}}
 
                 </div>
             </div>

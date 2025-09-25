@@ -57,6 +57,12 @@
                                 <label for="image" class="form-label">image</label>
                                 <input type="file" class="form-control dropify" id="image" name="image" value="image" value="{{ $blog->image }}" data-default-file="{{ asset($blog->image) }}">
                                 {{-- <input class="form-control dropify" type="file" id="image" name="image" placeholder="Image" rows="10" value="{{ $blog->image }}"></input> --}}
+
+                                <div class="form-check form-switch form-switch-danger">
+                                    <input class="form-check-input custom-switch-red" type="checkbox" id="delete-image"
+                                        name="deleteimage" />
+                                    <label class="form-check-label" for="delete-image">Delete</label>
+                                </div>
                             </div>
                         </div>
                     </div>

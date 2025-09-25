@@ -248,7 +248,7 @@ justify-content: center !important
                         </span> --}}
 
                         <span class="app-brand-text demo menu-text fw-bolder ms-2"><img class="dashboard_logo"
-                                src="{{ $settings['site_main_logo'] ?? '' }}" alt="">Consult</span>
+                                src="{{ $settings['site_main_logo'] ?? '' }}" alt="">Consultx</span>
                     </a>
 
                     <a href="javascript:void(0);"
