@@ -66,7 +66,7 @@
                     </g>
                   </svg>
                 </span> --}}
-                <span class="app-brand-text demo text-body fw-bolder"><img src="{{$settings['site_main_logo'] ?? ''}} " alt=""></span>
+                <span class="app-brand-text demo text-body fw-bolder"><img class="img-box " src="{{$settings['site_main_logo'] ?? ''}} " alt=""></span>
               </a>
             </div>
             <!-- /Logo -->
